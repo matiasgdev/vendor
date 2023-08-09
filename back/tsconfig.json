@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": false,
+    "sourceMap": false,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "lib": ["es2018", "es6", "es2020.Promise"],
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "outDir": "dist/",
+    "target": "es2017",
+    "removeComments": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "baseUrl": ".",
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
