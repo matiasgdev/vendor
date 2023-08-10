@@ -2,7 +2,7 @@ import {Model, Optional} from 'sequelize'
 import {db, DataTypes} from '../lib/orm'
 import {Agreement} from './Agreement'
 
-export interface IAccount {
+interface IAccount {
   id: number
   firstName: string
   lastName: string
@@ -45,4 +45,4 @@ Agreement.belongsTo(Account, {as: 'Buyer'})
 Account.hasMany(Agreement, {as: 'Supplier', foreignKey: 'SupplierId'})
 Account.hasMany(Agreement, {as: 'Buyer', foreignKey: 'BuyerId'})
 
-export {Account}
+export {Account, IAccount}
